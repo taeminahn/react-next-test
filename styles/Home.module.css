@@ -43,11 +43,13 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  position: static;
 }
 
 .title,
 .description {
   text-align: center;
+  z-index: 500;
 }
 
 .description {
@@ -106,6 +108,21 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.imgWrap {
+  /*cursor: grab;*/
+  /*touch-action: none;*/
+  /*user-select: none;*/
+  /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+  /*overflow: hidden;*/
+  /*position: relative;*/
+  /*display: flex;*/
+}
+.imgWrap Image {
+  width: 100%;
+  margin: auto;
+  -webkit-user-drag: none;
 }
 
 @media (max-width: 600px) {
