@@ -11,7 +11,7 @@ const Test = () => {
 
   return (
     <div>
-      <button onClick={windowClose}>윈도우 창 닫기 </button>
+      <button onClick={windowClose}>윈도우 창 닫기</button>
       <div className="selectBox">
         <select name="fruits" className="select">
           <option disabled selected>fruits 🍊</option>
