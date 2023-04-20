@@ -2,7 +2,6 @@ import React from 'react';
 import SystemImage from "../component/SystemImage";
 import SystemTitle from "../component/SystemTitle";
 import SystemContents from "../component/SystemContents";
-import testImage from '../public/motor.png'
 
 const ComponentOrder = () => {
 

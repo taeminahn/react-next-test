@@ -1,6 +1,5 @@
 import React, {Suspense, useEffect, useRef, useState} from 'react';
 import dynamic from "next/dynamic";
-import 'react-tridi/dist/index.css';
 import ImageVr from "../component/imageVR";
 
 const ImageSpin = () => {

@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import styles from '../styles/Home.module.css';
-import buttonLeft from '../public/button_left.png';
-import buttonRight from '../public/button_right.png';
 
 
 const Shape = () => {
