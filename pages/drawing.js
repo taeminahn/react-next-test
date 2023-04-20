@@ -1,8 +1,6 @@
 import React, {useRef, useState} from "react";
 import {ReactSketchCanvas} from 'react-sketch-canvas';
 import html2canvas from "html2canvas";
-import styled from 'styled-components';
-import dynamic from 'next/dynamic';
 import cls from 'classnames';
 
 const styles = {

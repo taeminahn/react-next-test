@@ -125,6 +125,52 @@
   -webkit-user-drag: none;
 }
 
+.shapeWrap {
+  /*width: 100%;*/
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.shapeWrap svg {
+  width: 500px;
+  height: 500px;
+}
+
+.shapeWrap svg polygon {
+}
+
+.shapeWrap img {
+  width: 100px;
+  height: 100px;
+}
+
+.shape {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 5px solid yellow;
+  outline: 5px solid red;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.squareWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.squareBox {
+  width: 30%;
+  border: 2px solid white;
+}
+.squareBox:after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

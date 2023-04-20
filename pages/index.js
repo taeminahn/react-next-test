@@ -31,6 +31,18 @@ export default function Home() {
           <h2>ComponentOrder &rarr;</h2>
           <p>컴포넌트 순서 배치</p>
         </Link>
+        <Link href="/shape" className={styles.card}>
+          <h2>shapeTest &rarr;</h2>
+          <p>모형 테스트</p>
+        </Link>
+        <Link href="/square" className={styles.card}>
+          <h2>squareTest &rarr;</h2>
+          <p>반응형 정사각형 테스트</p>
+        </Link>
+        <Link href="/reacthookform" className={styles.card}>
+          <h2>react-hook-from Test &rarr;</h2>
+          <p>리액트 훅 폼 테스트</p>
+        </Link>
       </div>
     </div>
   )
