@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react';
-import { useForm } from "react-hook-form"
+import { useForm, Controller } from "react-hook-form"
 import * as Yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
 import InputBoxComponent from "../component/inputBoxComponent";
+import InputBoxComponent_ from "../component/inputBoxComponent_";
 
 const ReactHookForm = () => {
 
@@ -21,7 +22,7 @@ const ReactHookForm = () => {
     mode: "onChange",
   }
 
-  const { register, handleSubmit, formState, getValues, setValue, watch } =
+  const { register, handleSubmit, control, formState, getValues, setValue, watch } =
     useForm(formOptions)
   const { errors } = formState
 
@@ -39,13 +40,20 @@ const ReactHookForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           이메일
-          <InputBoxComponent
-            type="text"
+          <Controller
             name="email"
-            placeholder="이메일을 입력해주세요."
-            setValue={(v) => setValue('email', v)}
-            error={errors.email?.message}
-            reactHookFormRegister={register('email')}
+            control={control}
+            render={({
+                       field: {onChange}
+                     }) =>
+              <InputBoxComponent
+                type="text"
+                name="email"
+                placeholder="이메일을 입력해주세요."
+                setValue={onChange}
+                error={errors.email?.message}
+              />
+            }
           />
         </div>
         <div>

@@ -130,28 +130,8 @@
   width: 1000px;
   height: 1000px;
   margin: 0 auto;
-}
-
-.shapeWrap svg {
-  width: 500px;
-  height: 500px;
-}
-
-.shapeWrap svg polygon {
-}
-
-.shapeWrap img {
-  width: 100px;
-  height: 100px;
-}
-
-.shape {
-  width: 300px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border: 5px solid yellow;
-  outline: 5px solid red;
-  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  background-color: #222222;
+  position: relative;
 }
 
 .squareWrap {
@@ -169,6 +149,81 @@
   display: block;
   content: "";
   padding-bottom: 100%;
+}
+
+.testButton {
+  width:408px;
+  height: 64px;
+  clip-path: polygon(30.3999px 0.5px, 400px 0.5px, 400px 0.5px, 400.567719px 0.545809px, 401.106272px 0.678432px, 401.608453px 0.890663px, 402.067056px 1.175296px, 402.474875px 1.525125px, 402.824704px 1.932944px, 403.109337px 2.391547px, 403.321568px 2.893728px, 403.454191px 3.432281px, 403.5px 4px, 403.5px 35.7209px, 403.5px 35.7209px, 403.462859px 36.4670681px, 403.353112px 37.1985968px, 403.173273px 37.9107827px, 402.925856px 38.5989224px, 402.613375px 39.2583125px, 402.238344px 39.8842496px, 401.803277px 40.4720303px, 401.310688px 41.0169512px, 400.763091px 41.5143089px, 400.163px 41.9594px, 381.763px 54.2384px, 381.763px 54.2384px, 381.387074px 54.4736166px, 380.999232px 54.6854848px, 380.600578px 54.8736722px, 380.192216px 55.0378464px, 379.77525px 55.177675px, 379.350784px 55.2928256px, 378.919922px 55.3829658px, 378.483768px 55.4477632px, 378.043426px 55.4868854px, 377.6px 55.5px, 7.99999px 55.5px, 7.99999px 55.5px, 7.43227371px 55.454191px, 6.89372288px 55.321568px, 6.39154357px 55.109337px, 5.93294184px 54.824704px, 5.52512375px 54.474875px, 5.17529536px 54.067056px, 4.89066273px 53.608453px, 4.67843192px 53.106272px, 4.54580899px 52.567719px, 4.5px 52px, 4.5px 20.2791px, 4.5px 20.2791px, 4.53714136px 19.5329319px, 4.64688848px 18.8014032px, 4.82672592px 18.0892173px, 5.07413824px 17.4010776px, 5.38661px 16.7416875px, 5.76162576px 16.1157504px, 6.19667008px 15.5279697px, 6.68922752px 14.9830488px, 7.23678264px 14.4856911px, 7.83682px 14.0406px, 26.2367px calc(50% - 30.23842px), 26.2367px calc(50% - 30.23842px), 26.6127801px calc(50% - 30.473632395px), 27.0007288px calc(50% - 30.68549696px), 27.3994487px calc(50% - 30.873681265px), 27.8078424px calc(50% - 31.03785288px), 28.2248125px calc(50% - 31.177679375px), 28.6492616px calc(50% - 31.29282832px), 29.0800923px calc(50% - 31.382967285px), 29.5162072px calc(50% - 31.44776384px), 29.9565089px calc(50% - 31.486885555px), 30.3999px calc(50% - 31.5px));
+  background-color: bisque;
+}
+
+.testButtonTwo {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='408' height='64' viewBox='0 0 408 64' fill='none'%3E%3Cg filter='url(%23filter0_d_508_7090)'%3E%3Cpath d='M25.9591 1.34568C27.2739 0.468261 28.8192 0 30.3999 0H400C402.209 0 404 1.79086 404 4V35.7209C404 38.3944 402.665 40.8912 400.441 42.3753L382.041 54.6543C380.726 55.5317 379.181 56 377.6 56H7.99999C5.79085 56 4 54.2091 4 52V20.2791C4 17.6056 5.33549 15.1088 7.55927 13.6247L25.9591 1.34568Z' fill='%2305141F'/%3E%3Cpath d='M30.3999 0.5H400C401.933 0.5 403.5 2.067 403.5 4V35.7209C403.5 38.2273 402.248 40.5681 400.163 41.9594L381.763 54.2384C380.531 55.061 379.082 55.5 377.6 55.5H7.99999C6.067 55.5 4.5 53.933 4.5 52V20.2791C4.5 17.7727 5.75202 15.4319 7.83682 14.0406L26.2367 1.76158C27.4693 0.938995 28.918 0.5 30.3999 0.5Z' stroke='black'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.canvas {
+  text-align: center;
+  line-height: 10vw;
+  width: 328px;
+  height: 40px;
+  border: 1px solid rebeccapurple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.canvas::after {
+  content: "";
+  position: absolute;
+  background-color: #222222;
+  right: -10px;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid rebeccapurple;
+  transform: rotate(-45deg);
+}
+.canvas::before {
+  content: "";
+  position: absolute;
+  background-color: #222222;
+  left: -10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid rebeccapurple;
+  transform: rotate(45deg);
+}
+.canvas:hover {
+  background-color: pink;
+}
+
+.sction {
+  width: 100vw;
+  /*height: 700px;*/
+  height: 100vh;
+}
+/*.sction:first-of-type {*/
+/*  height: 800px;*/
+/*}*/
+/*.sction:last-of-type {*/
+/*  height: 340px;*/
+/*}*/
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
 }
 
 @media (max-width: 600px) {

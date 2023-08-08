@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const InputBoxComponent = ({
    type = "text",
@@ -9,6 +10,7 @@ const InputBoxComponent = ({
    error = false,
    reactHookFormRegister,
                            }) => {
+
   return (
     <div>
       <input
@@ -25,6 +27,16 @@ const InputBoxComponent = ({
       }
     </div>
   );
+};
+
+InputBoxComponent.propTypes = {
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  setValue: PropTypes.string.isRequired,
+  error: PropTypes.string.isRequired,
+  reactHookFormRegister: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default InputBoxComponent;

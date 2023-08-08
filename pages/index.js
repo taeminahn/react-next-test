@@ -43,6 +43,18 @@ export default function Home() {
           <h2>react-hook-from Test &rarr;</h2>
           <p>리액트 훅 폼 테스트</p>
         </Link>
+        <Link href="/chartTest" className={styles.card}>
+          <h2>Highcharts Test &rarr;</h2>
+          <p>Highcharts 테스트</p>
+        </Link>
+        <Link href="/selectTest" className={styles.card}>
+          <h2>Select Test &rarr;</h2>
+          <p>Select 테스트</p>
+        </Link>
+        <Link href="/parallaxTest" className={styles.card}>
+          <h2>Parallax Test &rarr;</h2>
+          <p>Parallax 테스트</p>
+        </Link>
       </div>
     </div>
   )
