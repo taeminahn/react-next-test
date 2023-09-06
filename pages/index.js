@@ -55,6 +55,14 @@ export default function Home() {
           <h2>Parallax Test &rarr;</h2>
           <p>Parallax 테스트</p>
         </Link>
+        <Link href="/pannellumTest" className={styles.card}>
+          <h2>Pannellum Test &rarr;</h2>
+          <p>Pannellum 테스트</p>
+        </Link>
+        <Link href="/text3d" className={styles.card}>
+          <h2>3D Text Test &rarr;</h2>
+          <p>3D Text 테스트</p>
+        </Link>
       </div>
     </div>
   )

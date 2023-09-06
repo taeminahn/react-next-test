@@ -226,6 +226,11 @@
   background-color: purple;
 }
 
+.textThreeD {
+  font-size: 26px;
+  transform: translate(0, 0) rotateX(60deg) rotateZ(-35deg);
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
